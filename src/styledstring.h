@@ -11,6 +11,7 @@ namespace subman {
   struct range {
     size_t start = 0, finish = 0;
 
+    range() = default;
     range(size_t const& start, size_t const& finish) noexcept;
 
     bool operator<(range const& r) const noexcept;

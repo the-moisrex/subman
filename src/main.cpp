@@ -598,7 +598,7 @@ int book(boost::program_options::options_description const& /* desc */,
 
 
   for (auto const& word : _stats.words) {
-    cout <<
+	  // cout
   }
 
   return EXIT_SUCCESS;
