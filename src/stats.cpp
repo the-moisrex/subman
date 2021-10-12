@@ -19,7 +19,7 @@ void subman::stats::process(std::string_view content) {
     case ' ':
     case '\n':
     case '\t': {
-      auto str = std::string_view{start_it, end_it};
+      auto str = std::string_view{start_it, static_cast<size_t>(end_it - start_it)};
       auto found = std::find(words.begin(), words.end(), str);
       if (found == words.end()) {
         words.push_back(word_type{
